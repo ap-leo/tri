@@ -87,7 +87,7 @@ input{
 
 .comeco{
     display: none;
-    background-image: url(/image\ 4.png);
+    background-image: url(image\ 4.png);
 }
 
 .dados{
@@ -194,7 +194,7 @@ input{
 }
 
 .mapar{
-    background-image: url(/mapa.png);
+    background-image: url(mapa.png);
     background-repeat: none;
     background-position: cover;
     width: 100%;
@@ -309,7 +309,7 @@ input{
 .mapito{
     height: 90%;
     width: 100%;
-    background-image: url(/mapa2.png);
+    background-image: url(mapa2.png);
     background-size: cover;
     padding-top: 20%;
     padding-left: 30%;
@@ -470,17 +470,17 @@ input{
 
 
 .img2{
-    background-image: url(/moto.png);
+    background-image: url(moto.png);
 }
 .img2:hover{
-    background-image: url(/moto2.png);
+    background-image: url(moto2.png);
 }
 
 .img3{
-    background-image: url(/user.png);
+    background-image: url(user.png);
 }
 .img3:hover{
-    background-image: url(/user2.png);
+    background-image: url(user2.png);
 }
 
 .motorista{
@@ -524,14 +524,14 @@ input{
 .carro2{
     background: var(--white, #FFF);
     color: black;
-    background-image: url(/carro.png);
+    background-image: url(carro.png);
     background-repeat: no-repeat;
     background-size: contain;
     white-space: nowrap;
 }
 .carro1{
     background: #3843D0;
-    background-image: url(/carro.png);
+    background-image: url(carro.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -553,7 +553,7 @@ input{
 
 .veic{
     height: 100%;
-    background-image: url(/carro.png);
+    background-image: url(carro.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
