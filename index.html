@@ -118,7 +118,7 @@
 
 
     </section>
-    <script>
+       <script>
         var aux = 0;
         var botao = document.getElementById('apertar');
         var botao2 = document.getElementById('but');
@@ -137,9 +137,17 @@
 
         var open = document.getElementById('open');
 
+        function certo() {
+            qr.style.backgroundImage = "url('certo.png')";
+
+        }
+
+
         open.addEventListener("click", function(){
             botao2.style.display = "none";
             qr.style.display = "flex";
+
+            setTimeout(certo, 4000);
             
         })
 
