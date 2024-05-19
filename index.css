@@ -462,7 +462,7 @@ input{
 }
 
 .img1{
-    background-image: url(ic.png);
+    background-image: url(/ic);
 }
 .img1:hover{
     background-image: url(ic2.png);
