@@ -524,7 +524,7 @@ input{
 .carro2{
     background: var(--white, #FFF);
     color: black;
-    background-image: url(/tri/carro.png);
+    background-image: url(/carro.png);
     background-repeat: no-repeat;
     background-size: contain;
     white-space: nowrap;
