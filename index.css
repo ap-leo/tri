@@ -324,15 +324,26 @@ input{
     height: 50%;
 }
 
-.botoesh a{
+.botoesh{
     display: flex;
-    width: 70%;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 33px;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif
+    gap: 20px;
+    height: 50%;
+}
+
+.qr{
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+    background-image: url(/qr.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .ah1{
