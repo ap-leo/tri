@@ -309,7 +309,7 @@ input{
 .mapito{
     height: 90%;
     width: 100%;
-    background-image: url(/mapa2.png);
+    background-image: url(mapa2.png);
     background-size: cover;
     padding-top: 20%;
     padding-left: 30%;
@@ -462,10 +462,10 @@ input{
 }
 
 .img1{
-    background-image: url(/ic.png);
+    background-image: url(ic.png);
 }
 .img1:hover{
-    background-image: url(/ic2.png);
+    background-image: url(ic2.png);
 }
 
 
