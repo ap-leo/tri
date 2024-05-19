@@ -477,10 +477,10 @@ input{
 }
 
 .img3{
-    background-image: url(user);
+    background-image: url(/user);
 }
 .img3:hover{
-    background-image: url(user2);
+    background-image: url(/user2);
 }
 
 .motorista{
