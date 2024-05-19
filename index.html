@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="foot" id="foot">
+        <div class="img1" id="lugar">
+            
+        </div>
+        <div class="img2" id="moto">
+
+        </div>
+        <div class="img3" id="pessoa">
+
+        </div>
+    </div>
+
+    <section class="inicio" id="inicio">
+        <div class="textoi">
+            <p class="bold">
+                Revolucione sua mobilidade urbana com autonomia
+            </p>
+            <p>
+                Alugue um carro elétrico sem precisar de carteira de motorista e explore a cidade de forma prática e sustentável
+            </p>
+        </div>
+        <div class="botoesi">
+            <a class="a1i" id="log">Log in</a>
+            <a class="a2i">Criar Conta</a>
+        </div>
+    </section>
+    <script>
+        var log = document.getElementById('log');
+        log.addEventListener('click', function(){
+            var inicio = document.getElementById('inicio');
+            inicio.style.display = "none";
+            var comeco = document.getElementById('comeco');
+            comeco.style.display = "flex";
+        })
+    </script>
+
+    <section class="comeco" id="comeco">
+        <div class="titulo">
+            <h1>
+                TRI
+            </h1>
+        </div>
+        <div class="dados">
+            <input type="text" id="ip">
+            <input>
+        </div>
+        <div class="forgot">
+            <p>Forgot Password</p>
+        </div>
+        <div class="log" id="ir">
+            <a>
+                LOG IN
+            </a>
+        </div>
+    </section>
+    <script>
+        var valor;
+        var log = document.getElementById('ir');
+        log.addEventListener('click', function(){
+            var inicio = document.getElementById('comeco');
+            inicio.style.display = "none";
+            var comeco = document.getElementById('maps');
+            comeco.style.display = "flex";
+            var ip = document.getElementById('ip');
+            valor = ip.value;
+
+            var nome = document.getElementById('nome');
+            valor = valor.charAt(0).toUpperCase() + valor.slice(1);
+            nome.innerText = valor;
+
+            var foot = document.getElementById('foot');
+            foot.style.display = "flex";
+
+        })
+    </script>
+
+
+    <section class="mapao" id="maps">
+        <div class="mapito">
+            <img id="apertar" src="/apertar.png">
+        </div>
+
+        <div class="hid" id="hid">
+            <div class="aux">
+                <div class="le">
+                    <p class="p1">Centro<br>Politécnico</p>
+                    <p class="p2">a 5 minutos</p>
+                </div>
+
+                <div class="ri">
+                    <p class="p3">R$25</p>
+                    <p class="p4">/ hora</p>
+                </div>
+            </div>
+
+            <div class="botoesh">
+
+                <a class="ah1">5 veículos disponíveis</a>
+    
+                <a class="ah2">Desbloquear</a>
+    
+            </div>
+        </div>
+
+
+    </section>
+    <script>
+        var aux = 0;
+        var botao = document.getElementById('apertar');
+        botao.addEventListener("click", function(){
+            var hid = document.getElementById('hid');
+            if (aux == 0){
+                hid.style.bottom= "5%";
+                aux = 1;
+                return;
+            }
+                hid.style.bottom= "-55%";
+                aux = 0;
+        })
+
+    </script>
+
+    <section class="terceiro" id="terceiro">
+        <div class="marca">
+            <p id="nome">Oi, Julia!</p>
+            <img src="/moca.png">
+        </div>
+        <div class="map">
+
+        </div>
+
+        <div class="redondo">
+            <div class="car">
+                <div class="redondo2">
+                    <div class="mapar">
+                        <div class="textomapa">
+                            <p>em andamento</p>
+                        </div>
+                    </div>
+
+
+                    <div class="viagem">
+                        <div class="left">
+                                <p>Sua viagem</p>
+                                <img src="/Battery.png">
+                                <img src="/auto.png">
+                        </div>
+
+                        <div class="right">
+                            <img src="/carro.png">
+                        </div>
+                    </div>
+
+                    <div class="botoescar">
+                        <a class="a1">Direção</a>
+                        <a class="a2">Cancelar</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="motorista" id="motorista">
+        <div class="busca">
+            <input type="text" placeholder="Procurar por um carro">
+        </div>
+        <div class="carros">
+            <div class="carro1" id="carro1">
+                <p>Carro 1</p>
+            </div>
+            <div class="carro2" id="carro2">
+                <p>Carro 2</p>
+            </div>
+        </div>
+
+        <p class="sp">Veículos disponíveis</p>
+
+        <div class="veiculo">
+            <div class="textup">
+                <div class="t1">
+                    <p class="p11" id="marca">
+                        Marca
+                    </p>
+                    <p class="p22" id="mod">
+                        Modelo
+                    </p>
+                    <p class="p33">
+                        Enginee
+                    </p>
+                </div>
+
+                <div class="t2">
+                    <p class="pp1" id="preco">
+                        $350
+                    </p>
+                    <p class="pp2">
+                        / mounth
+                    </p>
+                    <p class="pp3">
+                        4-Cyl 1.5 Liter
+                    </p>
+                </div>
+            </div>
+            <div class="veic">
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var pessoa = document.getElementById('pessoa');
+        var moto = document.getElementById('moto');
+        var lugar = document.getElementById('lugar');
+        var maps = document.getElementById('maps');
+        var terceiro = document.getElementById('terceiro');
+        var motorista = document.getElementById('motorista');
+
+        pessoa.addEventListener("click", function(){
+            maps.style.display = "none";
+            motorista.style.display = "none";
+            terceiro.style.display = "flex";
+            
+        })
+
+        lugar.addEventListener("click", function(){
+            maps.style.display = "flex";
+            terceiro.style.display = "none";
+            motorista.style.display = "none";
+
+        })
+
+        moto.addEventListener("click", function(){
+            maps.style.display = "none";
+            motorista.style.display = "flex";
+            terceiro.style.display = "none";
+        })
+
+        var car1 = document.getElementById('carro1');
+        var car2 = document.getElementById('carro2');
+        var marca = document.getElementById('marca');
+        var mod = document.getElementById('mod');
+        var pre = document.getElementById('preco');
+
+
+
+        car1.addEventListener("click", function(){
+            car2.style.backgroundColor = "white";
+            car2.style.color = "black";
+            marca.innerText = "Marca 1";
+            mod.innerText = "Modelo 1";
+            preco.innerText = "$350";
+
+            car1.style.backgroundColor = "#3843D0";
+            car1.style.color = "white";
+
+        })
+
+        car2.addEventListener("click", function(){
+            car2.style.backgroundColor = "#3843D0";
+            car2.style.color = "white";
+            marca.innerText = "Marca 2";
+            mod.innerText = "Modelo 2";
+            preco.innerText = "$250";
+
+
+            car1.style.backgroundColor = "white";
+            car1.style.color = "black";
+
+        })
+
+    </script>
+</body>
+</html>
