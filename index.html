@@ -85,7 +85,7 @@
     </script>
 
 
-    <section class="mapao" id="maps">
+     <section class="mapao" id="maps">
         <div class="mapito">
             <img id="apertar" src="apertar.png">
         </div>
@@ -103,12 +103,16 @@
                 </div>
             </div>
 
-            <div class="botoesh">
+            <div class="botoesh" id="but">
 
                 <a class="ah1">5 veículos disponíveis</a>
     
-                <a class="ah2">Desbloquear</a>
+                <a id="open" class="ah2">Desbloquear</a>
     
+            </div>
+
+            <div class="qr" id="qr">
+
             </div>
         </div>
 
@@ -117,6 +121,9 @@
     <script>
         var aux = 0;
         var botao = document.getElementById('apertar');
+        var botao2 = document.getElementById('but');
+        var qr = document.getElementById('qr');
+
         botao.addEventListener("click", function(){
             var hid = document.getElementById('hid');
             if (aux == 0){
@@ -126,6 +133,14 @@
             }
                 hid.style.bottom= "-55%";
                 aux = 0;
+        })
+
+        var open = document.getElementById('open');
+
+        open.addEventListener("click", function(){
+            botao2.style.display = "none";
+            qr.style.display = "flex";
+            
         })
 
     </script>
