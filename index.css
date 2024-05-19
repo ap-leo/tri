@@ -324,13 +324,14 @@ input{
     height: 50%;
 }
 
-.botoesh{
+.botoesh a{
     display: flex;
-    flex-direction: column;
+    width: 90%;
+    border-radius: 33px;
+    border: 0.5px solid rgba(56, 0, 0, 0.079);
+    text-align: center;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    height: 50%;
 }
 
 .qr{
@@ -360,7 +361,6 @@ input{
 .ah2{
     background-color: #16006D;
     color: #FFF;
-    text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-style: normal;
